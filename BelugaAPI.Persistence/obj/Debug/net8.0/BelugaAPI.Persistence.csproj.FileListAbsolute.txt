@@ -1,0 +1,17 @@
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Persistence.deps.json
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Persistence.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Persistence.pdb
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Core.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Core.pdb
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.csproj.AssemblyReference.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.AssemblyInfoInputs.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.AssemblyInfo.cs
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAP.72E47474.Up2Date
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\refint\BelugaAPI.Persistence.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.pdb
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\ref\BelugaAPI.Persistence.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Persistence.runtimeconfig.json
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.genruntimeconfig.cache

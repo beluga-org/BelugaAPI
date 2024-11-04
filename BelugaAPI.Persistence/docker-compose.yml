@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  beluga-postgres:
+    image: postgres:15.3-alpine
+    container_name: beluga-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+
+  beluga-pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: beluga-pgadmin
+    restart: always
+    depends_on:
+      - beluga-postgres
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@localhost.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - 8080:80
+
+networks:
+  default:
+    name: local-network
+    external: true

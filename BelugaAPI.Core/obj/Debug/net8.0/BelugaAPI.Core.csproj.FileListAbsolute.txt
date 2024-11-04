@@ -1,0 +1,14 @@
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\bin\Debug\net8.0\BelugaAPI.Core.deps.json
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\bin\Debug\net8.0\BelugaAPI.Core.runtimeconfig.json
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\bin\Debug\net8.0\BelugaAPI.Core.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\bin\Debug\net8.0\BelugaAPI.Core.pdb
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.csproj.AssemblyReference.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.AssemblyInfoInputs.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.AssemblyInfo.cs
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.csproj.CoreCompileInputs.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\refint\BelugaAPI.Core.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.pdb
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\BelugaAPI.Core.genruntimeconfig.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Core\obj\Debug\net8.0\ref\BelugaAPI.Core.dll
