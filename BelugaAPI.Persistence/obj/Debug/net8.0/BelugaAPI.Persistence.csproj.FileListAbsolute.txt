@@ -15,3 +15,4 @@ C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\Bel
 C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\ref\BelugaAPI.Persistence.dll
 C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\bin\Debug\net8.0\BelugaAPI.Persistence.runtimeconfig.json
 C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.genruntimeconfig.cache
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Persistence\obj\Debug\net8.0\BelugaAPI.Persistence.sourcelink.json

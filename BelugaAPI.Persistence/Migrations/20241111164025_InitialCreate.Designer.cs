@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BelugaAPI.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241104000146_moreCoreTables")]
-    partial class moreCoreTables
+    [Migration("20241111164025_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,9 @@ namespace BelugaAPI.Persistence.Migrations
 
             modelBuilder.Entity("BelugaAPI.Core.Entities.AccessKey", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<string>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("created")
                         .HasColumnType("timestamp with time zone");
@@ -46,8 +44,9 @@ namespace BelugaAPI.Persistence.Migrations
                     b.Property<DateTime>("updated")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("userId")
-                        .HasColumnType("integer")
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("user_id");
 
                     b.HasKey("id");
@@ -57,13 +56,54 @@ namespace BelugaAPI.Persistence.Migrations
                     b.ToTable("access_key");
                 });
 
+            modelBuilder.Entity("BelugaAPI.Core.Entities.Translation", b =>
+                {
+                    b.Property<string>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("deleted")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("language")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("subtitleUrl")
+                        .HasColumnType("text")
+                        .HasColumnName("subtitle_url");
+
+                    b.Property<string>("translationUrl")
+                        .HasColumnType("text")
+                        .HasColumnName("translation_url");
+
+                    b.Property<DateTime>("updated")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("videoId")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("video_id");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("videoId");
+
+                    b.ToTable("translation");
+                });
+
             modelBuilder.Entity("BelugaAPI.Core.Entities.User", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<string>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("created")
                         .HasColumnType("timestamp with time zone");
@@ -90,29 +130,36 @@ namespace BelugaAPI.Persistence.Migrations
 
             modelBuilder.Entity("BelugaAPI.Core.Entities.Video", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<string>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("text");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+                    b.Property<string>("content")
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("created")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<string>("originalLanguage")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("original_language");
 
+                    b.Property<string>("originalUrl")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("original_url");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<DateTime>("updated")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("userId")
-                        .HasColumnType("integer")
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("user_id");
 
                     b.HasKey("id");
@@ -125,7 +172,7 @@ namespace BelugaAPI.Persistence.Migrations
             modelBuilder.Entity("BelugaAPI.Core.Entities.AccessKey", b =>
                 {
                     b.HasOne("BelugaAPI.Core.Entities.User", "user")
-                        .WithMany()
+                        .WithMany("accessKeys")
                         .HasForeignKey("userId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -133,15 +180,36 @@ namespace BelugaAPI.Persistence.Migrations
                     b.Navigation("user");
                 });
 
+            modelBuilder.Entity("BelugaAPI.Core.Entities.Translation", b =>
+                {
+                    b.HasOne("BelugaAPI.Core.Entities.Video", null)
+                        .WithMany("translations")
+                        .HasForeignKey("videoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("BelugaAPI.Core.Entities.Video", b =>
                 {
                     b.HasOne("BelugaAPI.Core.Entities.User", "user")
-                        .WithMany()
+                        .WithMany("videos")
                         .HasForeignKey("userId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("user");
+                });
+
+            modelBuilder.Entity("BelugaAPI.Core.Entities.User", b =>
+                {
+                    b.Navigation("accessKeys");
+
+                    b.Navigation("videos");
+                });
+
+            modelBuilder.Entity("BelugaAPI.Core.Entities.Video", b =>
+                {
+                    b.Navigation("translations");
                 });
 #pragma warning restore 612, 618
         }

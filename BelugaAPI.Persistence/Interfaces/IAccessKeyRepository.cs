@@ -4,6 +4,6 @@ namespace BelugaAPI.Persistence.Interfaces;
 
 public interface IAccessKeyRepository : IRepository<AccessKey>
 {
-    AccessKey? FetchById(int id);
-    List<AccessKey> FetchAllByUserId(int userId);
+    AccessKey? FetchById(string id);
+    List<AccessKey> FetchAllByUserId(string userId);
 }

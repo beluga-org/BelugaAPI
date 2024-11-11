@@ -8,6 +8,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<User> User { get; set; }
     public DbSet<Video> Video { get; set; }
     public DbSet<AccessKey> AccessKey { get; set; }
+    public DbSet<Translation> Translation { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

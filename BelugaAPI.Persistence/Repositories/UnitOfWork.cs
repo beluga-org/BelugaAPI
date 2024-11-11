@@ -15,10 +15,12 @@ public class UnitOfWork : IUnitOfWork
         User = new UserRepository(_context);
         Video = new VideoRepository(_context);
         AccessKey = new AccessKeyRepository(_context);
+        Translation = new TranslationRepository(_context);
     }
     
     public IUserRepository User { get; private set; }
     public IVideoRepository Video { get; private set; }
+    public ITranslationRepository Translation { get; private set; }
     public IAccessKeyRepository AccessKey { get; private set; }
     
     public async Task<int> Complete()

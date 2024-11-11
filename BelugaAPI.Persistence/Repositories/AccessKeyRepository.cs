@@ -11,7 +11,7 @@ public class AccessKeyRepository : Repository<AccessKey>, IAccessKeyRepository
     {
     }
 
-    public List<AccessKey> FetchAllByUserId(int userId)
+    public List<AccessKey> FetchAllByUserId(string userId)
     {
         var queryFilter = _entities
             .AsNoTracking()
@@ -22,7 +22,7 @@ public class AccessKeyRepository : Repository<AccessKey>, IAccessKeyRepository
         return queryFilter.ToList();
     }
 
-    public AccessKey? FetchById(int id)
+    public AccessKey? FetchById(string id)
     {
         var queryFilter = _entities
             .FirstOrDefault(x => x.id == id);
