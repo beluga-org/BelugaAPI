@@ -2,5 +2,5 @@ namespace BelugaAPI.Application.InputModel;
 
 public class AccessKeyInputModel
 {
-    public int userId { get; set; }
+    public string userId { get; set; }
 }

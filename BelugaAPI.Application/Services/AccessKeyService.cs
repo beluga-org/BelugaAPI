@@ -42,7 +42,7 @@ public class AccessKeyService : IAccessKeyService
         }
     }
     
-    public async Task<List<AccessKey>> FetchAccessKeyByUserId(int userId)
+    public async Task<List<AccessKey>> FetchAccessKeyByUserId(string userId)
     {
         try
         {
@@ -59,7 +59,7 @@ public class AccessKeyService : IAccessKeyService
         }
     }
 
-    public async Task<AccessKey> SoftDeleteAccessKey(int id)
+    public async Task<AccessKey> SoftDeleteAccessKey(string id)
     {
         try
         {

@@ -7,5 +7,10 @@ public class VideoInputModel
     public IFormFile file { get; set; }
     public string originalLanguage { get; set; }
     public string targetLanguage { get; set; }
-    public int userId { get; set; }
+    public string userId { get; set; }
+}
+
+public class VideoAddContentInputModel
+{
+    public string content { get; set; }
 }

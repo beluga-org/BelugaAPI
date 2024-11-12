@@ -5,14 +5,18 @@ namespace BelugaAPI.Core.Entities;
 [Table("video")]
 public class Video
 {
-    [DatabaseGenerated(databaseGeneratedOption: DatabaseGeneratedOption.Identity)]
-    public int id { get; set; }
-    public string name { get; set; }
+    public string id { get; set; }
+    [Column("original_name")]
+    public string originalName { get; set; }
     [Column("original_language")]
     public string originalLanguage{ get; set; }
+    public string? content { get; set; }
+    [Column("original_url")]
+    public string originalUrl { get; set; }
     [Column("user_id")]
-    public int userId { get; set; }
+    public string userId { get; set; }
     public User user { get; set; }
     public DateTime created { get; set; }
     public DateTime updated { get; set; }
+    public List<Translation> translations { get; set; }
 }

@@ -38,7 +38,7 @@ public class AccessKeyController : ControllerBase
     {
         try
         {
-            var accessKeys = await _accessKeyService.FetchAccessKeyByUserId(userId.AsInt());
+            var accessKeys = await _accessKeyService.FetchAccessKeyByUserId(userId);
 
             return new MyOkResult(accessKeys);
         }
@@ -54,7 +54,7 @@ public class AccessKeyController : ControllerBase
     {
         try
         {
-            var accessKey = await _accessKeyService.SoftDeleteAccessKey(id.AsInt());
+            var accessKey = await _accessKeyService.SoftDeleteAccessKey(id);
 
             return new MyOkResult(accessKey);
         }
