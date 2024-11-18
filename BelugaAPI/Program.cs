@@ -1,12 +1,29 @@
-﻿using BelugaAPI.Application;
+﻿using System.Text.Json;
+using BelugaAPI.Application;
 using BelugaAPI.Persistence;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+// formatterType in MVC options
+builder.Services.AddMvc(options =>
+{
+    options.AllowEmptyInputInBodyModelBinding = true;
+    foreach (var formatter in options.InputFormatters)
+    {
+        if (formatter.GetType() == typeof(SystemTextJsonInputFormatter))
+            ((SystemTextJsonInputFormatter)formatter).SupportedMediaTypes.Add(
+                Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse("text/plain"));
+    }
+}).AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+});
 
 builder.Services.AddEndpointsApiExplorer();
 
@@ -24,6 +41,12 @@ builder.Services.AddPersistenceInfrastructure(builder.Configuration);
 builder.Services.AddApplicationLayer();
 
 var app = builder.Build();
+
+app.UseCors(builderCors =>
+    builderCors.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+);
 
 app.UseSwagger();
 app.UseSwaggerUI(c =>

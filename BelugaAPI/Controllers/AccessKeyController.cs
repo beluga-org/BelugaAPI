@@ -33,7 +33,7 @@ public class AccessKeyController : ControllerBase
         }
     }
     
-    [HttpGet("{userId}")]
+    [HttpGet("user/{userId}")]
     public async Task<IActionResult> FetchAllByUserId(string userId)     
     {
         try
@@ -50,7 +50,7 @@ public class AccessKeyController : ControllerBase
     }    
     
     [HttpDelete("{id}")]
-    public async Task<IActionResult> FetchAllUserId(string id)     
+    public async Task<IActionResult> Delete(string id)     
     {
         try
         {
