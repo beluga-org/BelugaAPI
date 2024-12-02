@@ -6,6 +6,7 @@
     <projectFile>BelugaAPI.Core/BelugaAPI.Core.csproj</projectFile>
     <projectFile>BelugaAPI.Infrastructure/BelugaAPI.Infrastructure.csproj</projectFile>
     <projectFile>BelugaAPI.Persistence/BelugaAPI.Persistence.csproj</projectFile>
+    <projectFile>BelugaAPI.Provider/BelugaAPI.Provider.csproj</projectFile>
     <projectFile>BelugaAPI/BelugaAPI.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
@@ -14,31 +15,70 @@
   <component name="ChangeListManager">
     <list default="true" id="abb81145-3c67-47ca-9987-368bb2c37158" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BelugaAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BelugaAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/BelugaAPI.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/BelugaAPI.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/InputModel/VideoInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/InputModel/VideoInputModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Interfaces/IAccessKeyService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Interfaces/ITranslationService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Interfaces/IUserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Interfaces/IVideoService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/ServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/ServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Services/AccessKeyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/Services/AccessKeyService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Services/TranslationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/Services/TranslationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/Services/VideoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/Services/VideoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/bin/Debug/net8.0/BelugaAPI.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/BelugaAPI.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/BelugaAPI.Application.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/BelugaAPI.Application.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/ref/BelugaAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/ref/BelugaAPI.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/refint/BelugaAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/Debug/net8.0/refint/BelugaAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/Entities/Video.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/Entities/Video.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/bin/Debug/net8.0/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/bin/Debug/net8.0/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/bin/Debug/net8.0/BelugaAPI.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/bin/Debug/net8.0/BelugaAPI.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/BelugaAPI.Core.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/ref/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/ref/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/refint/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/Debug/net8.0/refint/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Context/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Context/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Interfaces/IAccessKeyRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Interfaces/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Interfaces/ITranslationRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Interfaces/IUnitOfWork.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Interfaces/IUserRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Interfaces/IVideoRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/AccessKeyRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/AccessKeyRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/TranslationRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/TranslationRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/VideoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/Repositories/VideoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/ServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/ServiceRegistration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/bin/Debug/net8.0/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/bin/Debug/net8.0/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/bin/Debug/net8.0/BelugaAPI.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/bin/Debug/net8.0/BelugaAPI.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/bin/Debug/net8.0/BelugaAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/bin/Debug/net8.0/BelugaAPI.Persistence.dll" afterDir="false" />
@@ -46,33 +86,55 @@
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/BelugaAPI.Persistence.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/ref/BelugaAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/ref/BelugaAPI.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/refint/BelugaAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/Debug/net8.0/refint/BelugaAPI.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.Persistence/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/BelugaAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/BelugaAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/Controllers/AccessKeyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/Controllers/AccessKeyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/Controllers/TranslationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/Controllers/TranslationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/Controllers/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/Controllers/VideoController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/BelugaAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/BelugaAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/BelugaAPI.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/BelugaAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/ref/BelugaAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/ref/BelugaAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/refint/BelugaAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/Debug/net8.0/refint/BelugaAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelugaAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BelugaAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +150,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/954f61dd38b33caa2b736c73530bd5a294174437/src/Http/Http/src/FormFile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/60524c9b11cdadb0d4be96adbe8d0954f9c7ed0a/src/EFCore/Extensions/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/08338fcaa5c9b9a8190abb99222fed12aaba956c/src/libraries/System.Net.Http/src/System/Net/Http/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46dc4a86c2884307bc0753d4a5f59569ff28/da/f276eb41/IServiceCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cf9220470d6e439ba5f5b536fa8c2fd26f18/fc/9e708643/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5bc723b2af4474dbeb089d20afaaf58b30b0/e6/71047379/CloudStorageAccount.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BelugaAPI.Application/Interfaces/IAccessKeyService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BelugaAPI.Application/Interfaces/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BelugaAPI.Application/Services/Interfaces/IAccessKeyService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BelugaAPI.Application/Services/Interfaces/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BelugaAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -114,7 +178,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Project.BelugaAPI.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.BelugaAPI.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.2368065&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -135,6 +199,20 @@
   }
 }</component>
   <component name="RunManager" selected=".NET Project.BelugaAPI">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -144,6 +222,42 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Application/Application.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Application/Application.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="BelugaAPI" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI/BelugaAPI.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -189,6 +303,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="BelugaAPI.Application" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI.Application/BelugaAPI.Application.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="BelugaAPI.Core" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -198,6 +330,42 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI.Core/BelugaAPI.Core.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="BelugaAPI.Core" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI.Core/BelugaAPI.Core.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="BelugaAPI.Infrastructure" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI.Infrastructure/BelugaAPI.Infrastructure.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -243,6 +411,42 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="BelugaAPI.Persistence" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI.Persistence/BelugaAPI.Persistence.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="BelugaAPI.Provider" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BelugaAPI.Provider/BelugaAPI.Provider.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="BelugaAPI/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -250,6 +454,30 @@
           <option name="containerName" value="belugaapi" />
           <option name="contextFolderPath" value="C:\Users\Joao Lucas\Sandbox\BelugaAPI" />
           <option name="sourceFilePath" value="BelugaAPI/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BelugaAPI/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="belugaapi" />
+          <option name="containerName" value="belugaapi" />
+          <option name="contextFolderPath" value="C:\Users\Joao Lucas\Sandbox\BelugaAPI" />
+          <option name="sourceFilePath" value="BelugaAPI/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BelugaAPI.Persistence/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="belugaapi.persistence" />
+          <option name="containerName" value="belugaapi.persistence" />
+          <option name="contextFolderPath" value="C:\Users\Joao Lucas\Sandbox\BelugaAPI" />
+          <option name="sourceFilePath" value="BelugaAPI.Persistence/Dockerfile" />
         </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
@@ -277,6 +505,15 @@
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
@@ -322,7 +559,14 @@
       <workItem from="1731798592633" duration="72000" />
       <workItem from="1731798995074" duration="787000" />
       <workItem from="1731799907295" duration="6723000" />
-      <workItem from="1731891102746" duration="1439000" />
+      <workItem from="1731891102746" duration="2149000" />
+      <workItem from="1731955644699" duration="4713000" />
+      <workItem from="1732037648571" duration="8971000" />
+      <workItem from="1732147234962" duration="1232000" />
+      <workItem from="1732320219118" duration="4829000" />
+      <workItem from="1732376549222" duration="15276000" />
+      <workItem from="1732407307753" duration="114000" />
+      <workItem from="1732407530778" duration="1872000" />
     </task>
     <servers />
   </component>
@@ -341,13 +585,169 @@
           <line>24</line>
           <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI\Controllers\AccessKeyController.cs" containingFunctionPresentation="Method 'Create'">
             <startOffsets>
-              <option value="625" />
+              <option value="634" />
             </startOffsets>
             <endOffsets>
-              <option value="686" />
+              <option value="695" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI/Controllers/VideoController.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI\Controllers\VideoController.cs" containingFunctionPresentation="Method 'CreateVideo'">
+            <startOffsets>
+              <option value="1220" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1269" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Provider/Providers/OpenAiService.cs</url>
+          <line>89</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Provider\Providers\OpenAiService.cs" containingFunctionPresentation="Method 'CreateRun'">
+            <startOffsets>
+              <option value="2708" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2801" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Provider/Providers/OpenAiService.cs</url>
+          <line>107</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Provider\Providers\OpenAiService.cs" containingFunctionPresentation="Method 'CreateRun'">
+            <startOffsets>
+              <option value="3401" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3474" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Provider/Providers/OpenAiService.cs</url>
+          <line>58</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Provider\Providers\OpenAiService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="1817" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1931" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Provider/Providers/OpenAiService.cs</url>
+          <line>73</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Provider\Providers\OpenAiService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="2306" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2340" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Application/Services/ChatService.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\Services\ChatService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="1873" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1902" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Application/Services/ChatService.cs</url>
+          <line>40</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\Services\ChatService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="1106" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1159" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI/Controllers/ChatController.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI\Controllers\ChatController.cs" containingFunctionPresentation="Method 'CreateMessage'">
+            <startOffsets>
+              <option value="658" />
+            </startOffsets>
+            <endOffsets>
+              <option value="709" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI/Controllers/ChatController.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI\Controllers\ChatController.cs" containingFunctionPresentation="Method 'FetchChat'">
+            <startOffsets>
+              <option value="1024" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1086" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Application/Services/ChatService.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\Services\ChatService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="1526" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1808" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Application/Services/ChatService.cs</url>
+          <line>63</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\Services\ChatService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="1920" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1979" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BelugaAPI.Application/Services/ChatService.cs</url>
+          <line>70</line>
+          <properties documentPath="C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\Services\ChatService.cs" containingFunctionPresentation="Method 'AddMessage'">
+            <startOffsets>
+              <option value="2205" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2288" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

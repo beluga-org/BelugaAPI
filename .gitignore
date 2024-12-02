@@ -1,0 +1,25 @@
+# Ignore os diretórios bin e obj em qualquer lugar dentro da solução
+**/bin/
+**/obj/
+
+# Ignore arquivos de build do Visual Studio
+.vs/
+.vscode/
+
+# Ignore arquivos de usuário do Visual Studio
+.vsconfig
+
+# Ignore arquivos do Rider
+.idea/
+
+# Ignore arquivos temporários do .NET
+project.lock.json
+project.fragment.lock.json
+
+# Ignore o arquivo do build
+artifacts/
+
+**/appsettings.json
+**/appsettings.Development.json
+**/appsettings.Production.json
+**/appsettings.Staging.json

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 using BelugaAPI.Persistence.Context;
-using BelugaAPI.Persistence.Interfaces;
+using BelugaAPI.Persistence.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace BelugaAPI.Persistence.Repositories;

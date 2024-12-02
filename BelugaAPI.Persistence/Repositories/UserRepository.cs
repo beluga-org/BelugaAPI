@@ -1,6 +1,6 @@
 ﻿using BelugaAPI.Core.Entities;
 using BelugaAPI.Persistence.Context;
-using BelugaAPI.Persistence.Interfaces;
+using BelugaAPI.Persistence.Repositories.Interfaces;
 
 namespace BelugaAPI.Persistence.Repositories;
 

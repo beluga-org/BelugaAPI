@@ -18,3 +18,5 @@ C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\obj\Debug\net8.0\Bel
 C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\obj\Debug\net8.0\BelugaAPI.Application.genruntimeconfig.cache
 C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\obj\Debug\net8.0\ref\BelugaAPI.Application.dll
 C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\obj\Debug\net8.0\BelugaAPI.Application.sourcelink.json
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\bin\Debug\net8.0\BelugaAPI.Provider.dll
+C:\Users\Joao Lucas\Sandbox\BelugaAPI\BelugaAPI.Application\bin\Debug\net8.0\BelugaAPI.Provider.pdb

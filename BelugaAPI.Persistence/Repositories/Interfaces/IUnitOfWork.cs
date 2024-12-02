@@ -1,4 +1,4 @@
-﻿namespace BelugaAPI.Persistence.Interfaces;
+﻿namespace BelugaAPI.Persistence.Repositories.Interfaces;
 
 public interface IUnitOfWork : IDisposable
 {
@@ -7,4 +7,5 @@ public interface IUnitOfWork : IDisposable
     IVideoRepository Video { get; }
     ITranslationRepository Translation { get; }
     IAccessKeyRepository AccessKey { get; }
+    IChatRepository Chat { get; }
 }

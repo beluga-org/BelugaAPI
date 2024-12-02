@@ -17,6 +17,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BelugaAPI.Persistence\BelugaAPI.Persistence.csproj" />
+      <ProjectReference Include="..\BelugaAPI.Provider\BelugaAPI.Provider.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 using System.Text.Json;
 using BelugaAPI.Application.InputModel;
-using BelugaAPI.Application.Interfaces;
+using BelugaAPI.Application.Services.Interfaces;
 using BelugaAPI.Core.Entities;
-using BelugaAPI.Persistence.Interfaces;
+using BelugaAPI.Persistence.Repositories.Interfaces;
 using BelugaAPI.Persistence.Services.Interfaces;
 using BelugaAPI.Persistence.Services.Requests;
 
@@ -73,7 +73,7 @@ public class VideoService : IVideoService
         }
     }
 
-    public async Task<Video> AddContentToVideo(string videoId, VideoAddContentInputModel req)
+    public async Task<Video> AddContentToVideo(string videoId, VideoAddAssistantInputModel req)
     {
         try
         {
@@ -83,7 +83,7 @@ public class VideoService : IVideoService
             if (video == null)
                 throw new Exception("Video not found");
 
-            video.content = req.content;
+            video.assistantExternalId = req.assistantExternalId;
             video.updated = DateTime.UtcNow;
 
             _unitOfWork.Video.Update(video);

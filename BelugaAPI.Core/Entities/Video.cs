@@ -10,7 +10,8 @@ public class Video
     public string originalName { get; set; }
     [Column("original_language")]
     public string originalLanguage{ get; set; }
-    public string? content { get; set; }
+    [Column("assistant_external_id")]
+    public string? assistantExternalId { get; set; }
     [Column("original_url")]
     public string originalUrl { get; set; }
     [Column("user_id")]
@@ -19,4 +20,5 @@ public class Video
     public DateTime created { get; set; }
     public DateTime updated { get; set; }
     public List<Translation> translations { get; set; }
+    public List<Chat> chats { get; set; }
 }

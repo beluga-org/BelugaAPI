@@ -53,6 +53,33 @@ namespace BelugaAPI.Persistence.Migrations
                     b.ToTable("access_key");
                 });
 
+            modelBuilder.Entity("BelugaAPI.Core.Entities.Chat", b =>
+                {
+                    b.Property<string>("userId")
+                        .HasColumnType("text")
+                        .HasColumnName("user_id");
+
+                    b.Property<string>("videoId")
+                        .HasColumnType("text")
+                        .HasColumnName("video_id");
+
+                    b.Property<DateTime>("created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("threadId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("updated")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("userId", "videoId");
+
+                    b.HasIndex("videoId");
+
+                    b.ToTable("chat");
+                });
+
             modelBuilder.Entity("BelugaAPI.Core.Entities.Translation", b =>
                 {
                     b.Property<string>("id")
@@ -130,8 +157,9 @@ namespace BelugaAPI.Persistence.Migrations
                     b.Property<string>("id")
                         .HasColumnType("text");
 
-                    b.Property<string>("content")
-                        .HasColumnType("text");
+                    b.Property<string>("assistantExternalId")
+                        .HasColumnType("text")
+                        .HasColumnName("assistant_external_id");
 
                     b.Property<DateTime>("created")
                         .HasColumnType("timestamp with time zone");
@@ -177,6 +205,25 @@ namespace BelugaAPI.Persistence.Migrations
                     b.Navigation("user");
                 });
 
+            modelBuilder.Entity("BelugaAPI.Core.Entities.Chat", b =>
+                {
+                    b.HasOne("BelugaAPI.Core.Entities.User", "user")
+                        .WithMany("chats")
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BelugaAPI.Core.Entities.Video", "video")
+                        .WithMany("chats")
+                        .HasForeignKey("videoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
+
+                    b.Navigation("video");
+                });
+
             modelBuilder.Entity("BelugaAPI.Core.Entities.Translation", b =>
                 {
                     b.HasOne("BelugaAPI.Core.Entities.Video", null)
@@ -201,11 +248,15 @@ namespace BelugaAPI.Persistence.Migrations
                 {
                     b.Navigation("accessKeys");
 
+                    b.Navigation("chats");
+
                     b.Navigation("videos");
                 });
 
             modelBuilder.Entity("BelugaAPI.Core.Entities.Video", b =>
                 {
+                    b.Navigation("chats");
+
                     b.Navigation("translations");
                 });
 #pragma warning restore 612, 618

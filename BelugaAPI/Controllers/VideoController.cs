@@ -1,5 +1,5 @@
 using BelugaAPI.Application.InputModel;
-using BelugaAPI.Application.Interfaces;
+using BelugaAPI.Application.Services.Interfaces;
 using BelugaAPI.Common.CustomResult;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +21,24 @@ public class VideoController : ControllerBase
     {
         try
         {
+            
+            // [HttpPost]
+            // public async Task<IActionResult> CreateVideo(        
+            //     IFormFile file, 
+            //     string originalName, 
+            //     string targetLanguage,
+            //     string userId)     
+            // {
+            //     try
+            //     {
+            //         var req = new VideoInputModel()
+            //         {
+            //             file = file,
+            //             originalLanguage = originalName,
+            //             targetLanguage = targetLanguage,
+            //             userId = userId
+            //         };  
+            
             var video = await _videoService.CreateVideo(req);
 
             return new MyOkResult(video);
@@ -65,7 +83,7 @@ public class VideoController : ControllerBase
     } 
     
     [HttpPut("{id}/content")]
-    public async Task<IActionResult> AddContentToVideo(string id, VideoAddContentInputModel req)     
+    public async Task<IActionResult> AddContentToVideo(string id, VideoAddAssistantInputModel req)     
     {
         try
         {

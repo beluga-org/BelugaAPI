@@ -10,7 +10,7 @@ public class VideoInputModel
     public string userId { get; set; }
 }
 
-public class VideoAddContentInputModel
+public class VideoAddAssistantInputModel
 {
-    public string content { get; set; }
+    public string assistantExternalId { get; set; }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace BelugaAPI.Persistence.Interfaces;
+namespace BelugaAPI.Persistence.Repositories.Interfaces;
 
 public interface IRepository<TEntity> where TEntity : class
 {

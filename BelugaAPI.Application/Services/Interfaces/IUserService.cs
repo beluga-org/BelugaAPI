@@ -1,7 +1,7 @@
 using BelugaAPI.Application.InputModel;
 using BelugaAPI.Core.Entities;
 
-namespace BelugaAPI.Application.Interfaces;
+namespace BelugaAPI.Application.Services.Interfaces;
 
 public interface IUserService
 {

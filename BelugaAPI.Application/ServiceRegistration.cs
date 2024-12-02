@@ -1,4 +1,4 @@
-﻿using BelugaAPI.Application.Interfaces;
+﻿using BelugaAPI.Application.Services.Interfaces;
 using BelugaAPI.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +12,7 @@ public static class ServiceRegistration
         services.AddScoped<IAccessKeyService, AccessKeyService>();
         services.AddScoped<IVideoService, VideoService>();
         services.AddScoped<ITranslationService, TranslationService>();
+        services.AddScoped<IChatService, ChatService>();
 
         return services;
     }

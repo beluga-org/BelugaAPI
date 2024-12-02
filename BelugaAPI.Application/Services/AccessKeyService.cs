@@ -1,8 +1,8 @@
 using BelugaAPI.Application.InputModel;
-using BelugaAPI.Application.Interfaces;
+using BelugaAPI.Application.Services.Interfaces;
 using BelugaAPI.Application.Utils;
 using BelugaAPI.Core.Entities;
-using BelugaAPI.Persistence.Interfaces;
+using BelugaAPI.Persistence.Repositories.Interfaces;
 using BelugaAPI.Persistence.Repositories;
 
 namespace BelugaAPI.Application.Services;

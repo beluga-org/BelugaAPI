@@ -1,4 +1,4 @@
-﻿﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
  
 namespace BelugaAPI.Core.Entities;
 
@@ -14,4 +14,5 @@ public class User
     public DateTime updated { get; set; }
     public List<Video> videos { get; set; }
     public List<AccessKey> accessKeys { get; set; }
+    public List<Chat> chats { get; set; }
 }

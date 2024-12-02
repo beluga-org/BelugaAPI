@@ -1,8 +1,10 @@
 ﻿using System.Text.Json;
 using BelugaAPI.Application;
 using BelugaAPI.Persistence;
+using BelugaAPI.Provider;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
@@ -38,6 +40,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddPersistenceInfrastructure(builder.Configuration);
+builder.Services.AddProviderLayer(builder.Configuration);
 builder.Services.AddApplicationLayer();
 
 var app = builder.Build();

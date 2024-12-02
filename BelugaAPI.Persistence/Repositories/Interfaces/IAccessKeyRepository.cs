@@ -1,6 +1,6 @@
 using BelugaAPI.Core.Entities;
 
-namespace BelugaAPI.Persistence.Interfaces;
+namespace BelugaAPI.Persistence.Repositories.Interfaces;
 
 public interface IAccessKeyRepository : IRepository<AccessKey>
 {

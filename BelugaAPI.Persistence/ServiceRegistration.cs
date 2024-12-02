@@ -1,5 +1,5 @@
 ﻿using BelugaAPI.Persistence.Context;
-using BelugaAPI.Persistence.Interfaces;
+using BelugaAPI.Persistence.Repositories.Interfaces;
 using BelugaAPI.Persistence.Repositories;
 using BelugaAPI.Persistence.Services;
 using BelugaAPI.Persistence.Services.Interfaces;

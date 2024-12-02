@@ -1,6 +1,6 @@
 using System.Web.WebPages;
 using BelugaAPI.Application.InputModel;
-using BelugaAPI.Application.Interfaces;
+using BelugaAPI.Application.Services.Interfaces;
 using BelugaAPI.Common.CustomResult;
 using Microsoft.AspNetCore.Mvc;
 
